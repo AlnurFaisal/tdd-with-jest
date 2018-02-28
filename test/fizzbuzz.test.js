@@ -12,5 +12,12 @@ test('5 should return buzz', () => {
     expect(fizzbuzz(5)).toEqual('buzz');
 });
 
+test('15 should return fizzbuzz', () => {
+    expect(fizzbuzz(15)).toEqual('fizzbuzz'); 
+});
+
+test('9 should return fizz', () => {
+  expect(fizzbuzz(9)).toEqual('fizz');
+});
 
 
