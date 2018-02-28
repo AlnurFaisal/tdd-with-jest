@@ -1,10 +1,13 @@
 const kebabize = require("../src/kebabize");
-
-test.skip("hiThere should be kebabized to hi-there", function() {
-  expect(kebabize("hiThere")).toEqual("hi-there");
+test('h should return h', () => {
+ expect(kebabize('h')).toEqual('h'); 
 });
 
-test.skip("hiThereBruceWayne shuld be kebabized to hi-there-bruce-wayne", function() {
+test("gH should return g-h", function() {
+  expect(kebabize("gH")).toEqual("g-h");
+});
+
+test("hiThereBruceWayne shuld be kebabized to hi-there-bruce-wayne", function() {
   expect(kebabize("hiThereBruceWayne")).toEqual("hi-there-bruce-wayne");
 });
 
